@@ -8,6 +8,5 @@ spec:
   type: NodePort
   ports:
   - port: 3306
-    protocol: TCP
   selector:
     app: mysql8
