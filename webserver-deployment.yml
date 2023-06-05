@@ -1,0 +1,21 @@
+kind: Deployment
+metadata:
+  name: webserver
+  labels:
+    app: apache
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: apache
+  template:
+    metadata:
+      labels:
+        app: apache
+    spec:
+      containers:
+      - name: php-apache
+        image: imrantaurus2003/php-application4
+        imagePullPolicy: Never
+        ports:
+        - containerPort: 80
