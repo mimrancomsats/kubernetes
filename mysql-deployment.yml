@@ -23,4 +23,3 @@ spec:
         - name: MYSQL_USER
         ports:
         - containerPort: 3306
-          name: mysql8
