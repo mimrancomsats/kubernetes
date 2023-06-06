@@ -21,9 +21,6 @@ spec:
         - name: MYSQL_DATABASE
           value: my_db
         - name: MYSQL_USER
-          value: db_user
-        - name: MYSQL_PASSWORD
-          value: .mypwd
         ports:
         - containerPort: 3306
           name: mysql8
