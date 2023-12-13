@@ -6,8 +6,6 @@ spec:
   selector:
     matchLabels:
       app: mysql8
-  strategy:
-    type: Recreate
   template:
     metadata:
       labels:
