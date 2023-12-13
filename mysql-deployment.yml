@@ -1,4 +1,4 @@
-apiVersion: apps/v1 # for versions before 1.9.0 use apps/v1beta2
+apiVersion: apps/v1 
 kind: Deployment
 metadata:
   name: mysql
@@ -14,7 +14,6 @@ spec:
       containers:
       - image: mysql:8.0
         name: mysql
-        imagePullPolicy: Never
         env:
         - name: MYSQL_ROOT_PASSWORD
           value: .sweetpwd.
